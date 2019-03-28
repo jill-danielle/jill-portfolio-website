@@ -15,13 +15,13 @@
 
   <header>
 
-    <div>
+    <div class="container">
       <a href="index.html">Jill Danielle Liao</a>
       <nav>
         <ul class="navigation">
-          <li class="navigation"><a href="index.html">Work</a></li>
-          <li class="navigation"><a href="about.html">About</a></li>
-          <li class="navigation"><a href="#contact">Contact</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -30,8 +30,8 @@
   <main>
     <!-- below is basic structure code for the hero section -->
     <div>
-      <div>
-        <h1>Jill Danielle Liao<span>UX Designer</span></h1>
+      <div class="container">
+        <h1 id="indexhero">Jill Danielle Liao<span>UX Designer</span></h1>
         <p>
           Hi! I'm a UX Designer from Manila and these are my projects, I hope you’ll enjoy viewing my work as much as I enjoyed working on them. Go ahead and explore, and don’t hesitate to reach out if you’d like to learn more or if you'd like to
           collaborate with me.
@@ -39,19 +39,19 @@
       </div>
     </div>
     <!-- below is basic structure code for the work section -->
-    <div>
-      <div>
+    <div id="work">
+      <div class="container">
         <h2>My Projects</h2>
 
-        <div>
-          <div>
+        <div class="row">
+          <div >
             <picture>
               <source srcset="img/home-page/expert-app@1x.jpg" media="(max-width:767px)">
               <img src="img/home-page/expert-app@2x.jpg" alt="Expert App Image">
             </picture>
           </div>
 
-          <div>
+          <div >
             <h3>Expert App<span>Ask a Question. Get an Answer.</span></h3>
             <p>
               Expert App is all about connecting you with credible, verified experts. We know that looking for answers on the web is sometimes frustrating because you are not sure the source is reliable. Expert App solves this problem by connecting
@@ -60,7 +60,7 @@
             <a href="">Explore Expert App</a>
           </div>
 
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="img/home-page/frontend-dev@1x.jpg" media="(max-width:767px)">
@@ -77,7 +77,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="row">
             <div>
               <picture>
                 <source srcset="img/home-page/ui-design@1x.jpg" media="(max-width:767px)">
@@ -100,7 +100,7 @@
   </main>
 
   <footer id="contact">
-    <div>
+    <div class="container">
       <h2>Get in Touch</h2>
       <p>
         Do you like my work and want collaborate? Please get in touch.

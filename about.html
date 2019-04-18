@@ -15,14 +15,17 @@
 
   <header>
     <div class="container">
-      <a href="index.html" class="logo">Jill Danielle Liao</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Jill Danielle Liao</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- below starts the "main" section which contains all content which is different on every page -->
@@ -39,81 +42,82 @@
       <!--orange-->
       <div class="container">
         <div class="center">
-        <picture>
-          <source srcset="img/about-me/jill@2x.jpg" media="(max-width:767px)">
-          <img src="img/about-me/jill@1x.jpg" alt="jill danielle liao picture">
-        </picture>
+          <picture>
+            <source srcset="img/about-me/jill@2x.jpg" media="(max-width:767px)">
+            <img src="img/about-me/jill@1x.jpg" alt="jill danielle liao picture">
+          </picture>
         </div>
 
-
-      <div>
-        <!-- row for columns-->
-        <div>
-          <h2>My UX Journey</h2>
-          <p>
-            I am a UX designer who has a background of Fine Arts in Design and currently working for my family's plastic manufacturing business as an Office Administrator. When I first started to work in this business I had no background in
-            manufacturing but as time goes by and through daily experience and challenges, I have learned the importance of having soft skills and an inner drive in identifying and solving problems within the company.
-          </p>
-          <p>
-            While working, I studied UX Design on my free time and have created a conceptual app built individually from start to finish using UX processes, a hi-fidelity prototype and a website showcasing the Design Thinking Process on how I built
-            the app as my first output.
-          </p>
-          <p>
-            As a UX Designer, my goal is to passionately seek insights from data research and to use the analyzed data to create simple and thoughtful solutions for users.
-          </p>
-          <p>
-            I am also currently studying Frontend Development to learn HTML, CSS, and JavaScript to build a website from scratch with the understanding of testing and debugging the website.
-          </p>
-          <a href="files/liao-jill-danielle-cv.pdf" target="_blank" class="button red"> View my CV</a>
-        </div>
 
         <div>
-          <h2>Skills and Tools</h2>
+          <!-- row for columns-->
+          <div>
+            <h2>My UX Journey</h2>
+            <p>
+              I am a UX designer who has a background of Fine Arts in Design and currently working for my family's plastic manufacturing business as an Office Administrator. When I first started to work in this business I had no background in
+              manufacturing but as time goes by and through daily experience and challenges, I have learned the importance of having soft skills and an inner drive in identifying and solving problems within the company.
+            </p>
+            <p>
+              While working, I studied UX Design on my free time and have created a conceptual app built individually from start to finish using UX processes, a hi-fidelity prototype and a website showcasing the Design Thinking Process on how I
+              built
+              the app as my first output.
+            </p>
+            <p>
+              As a UX Designer, my goal is to passionately seek insights from data research and to use the analyzed data to create simple and thoughtful solutions for users.
+            </p>
+            <p>
+              I am also currently studying Frontend Development to learn HTML, CSS, and JavaScript to build a website from scratch with the understanding of testing and debugging the website.
+            </p>
+            <a href="files/liao-jill-danielle-cv.pdf" target="_blank" class="button red"> View my CV</a>
+          </div>
 
-<div class="row">
-        <div class="col-md-4">
-          <h3>UX Skills</h3>
-          <ul>
-            <li>Design Thinking</li>
-            <li>User and Usability Research </li>
-            <li>Sketching</li>
-            <li>User Persona and Journey</li>
-            <li>Storytelling</li>
-            <li>Information Architecture</li>
-            <li>Wireframing and Prototyping</li>
-            <li>A/B Testing</li>
-          </ul>
-        </div>
+          <div>
+            <h2>Skills and Tools</h2>
 
-        <div class="col-md-4">
-          <h3>Soft Skills</h3>
-          <ul>
-            <li>Curious</li>
-            <li>Detail-Oriented</li>
-            <li>Empathetic</li>
-            <li>Good-Communicator</li>
-            <li>Learner</li>
-            <li>Manages Time Wisely</li>
-            <li>Self-Motivated</li>
-            <li>Team Player</li>
-          </ul>
-        </div>
+            <div class="row">
+              <div class="col-md-4">
+                <h3>UX Skills</h3>
+                <ul>
+                  <li>Design Thinking</li>
+                  <li>User and Usability Research </li>
+                  <li>Sketching</li>
+                  <li>User Persona and Journey</li>
+                  <li>Storytelling</li>
+                  <li>Information Architecture</li>
+                  <li>Wireframing and Prototyping</li>
+                  <li>A/B Testing</li>
+                </ul>
+              </div>
 
-        <div class="col-md-4">
-          <h3>Tools I Use</h3>
-          <ul>
-            <li>Sketch App</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-            <li>Invision</li>
-            <li>Balsamiq</li>
-          </ul>
+              <div class="col-md-4">
+                <h3>Soft Skills</h3>
+                <ul>
+                  <li>Curious</li>
+                  <li>Detail-Oriented</li>
+                  <li>Empathetic</li>
+                  <li>Good-Communicator</li>
+                  <li>Learner</li>
+                  <li>Manages Time Wisely</li>
+                  <li>Self-Motivated</li>
+                  <li>Team Player</li>
+                </ul>
+              </div>
+
+              <div class="col-md-4">
+                <h3>Tools I Use</h3>
+                <ul>
+                  <li>Sketch App</li>
+                  <li>Photoshop</li>
+                  <li>Illustrator</li>
+                  <li>Invision</li>
+                  <li>Balsamiq</li>
+                </ul>
+              </div>
+            </div>
+          </div><!-- row for columns-->
         </div>
       </div>
-      </div><!-- row for columns-->
     </div>
-  </div>
-  </div>
     <!--orange-->
   </main>
 
@@ -139,7 +143,8 @@
     </div>
   </footer>
 
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>">
+  <script src="js/scripts.js"></script>
 
 </body>
 

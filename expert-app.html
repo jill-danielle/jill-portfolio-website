@@ -15,20 +15,23 @@
 
   <header>
     <div class="container">
-      <a href="index.html" class="logo">Jill Danielle Liao</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Jill Danielle Liao</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- below starts the "main" section which contains all content which is different on every page -->
   <main class="expertpage">
     <!-- below is basic structure code for the hero section -->
-    <div id="hero-expert" >
+    <div id="hero-expert">
       <div>
         <h1 style="font-size:30px">Expert App</h1>
         <p>
@@ -116,61 +119,61 @@
         </div>
 
       </div>
-  </div>
+    </div>
 
 
-        <div>
-          <div class="container">
-            <h2>Tools and Techniques</h2>
+    <div>
+      <div class="container">
+        <h2>Tools and Techniques</h2>
+      </div>
+    </div>
+
+    <div>
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Techniques Used:</h3>
+            <ul>
+              <li>User Research(Survey & Interview)</li>
+              <li>Competitor Analysis</li>
+              <li>Personas and Journey Maps</li>
+              <li>User Stories</li>
+              <li>Information Architecture</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+              <li>Usability Testing</li>
+              <li>A/B Testing</li>
+              <li>UI Design</li>
+            </ul>
           </div>
-        </div>
-
-        <div>
-          <div class="container" >
-
-            <div class="row">
-              <div class="col-md-6">
-                <h3>Techniques Used:</h3>
-                <ul>
-                  <li>User Research(Survey & Interview)</li>
-                  <li>Competitor Analysis</li>
-                  <li>Personas and Journey Maps</li>
-                  <li>User Stories</li>
-                  <li>Information Architecture</li>
-                  <li>Wireframing</li>
-                  <li>Prototyping</li>
-                  <li>Usability Testing</li>
-                  <li>A/B Testing</li>
-                  <li>UI Design</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <h3>Tools Used:</h3>
-                <ul>
-                  <li>Sketch</li>
-                  <li>Illustrator</li>
-                  <li>Photoshop</li>
-                  <li>Balsamiq</li>
-                  <li>Invision</li>
-                </ul>
-                <div>
-                  <p>
-                    Project Duration : 10 Months
-                  </p>
-                  <p>
-                    My Role : Principal UX and UI Designer as part of my CareerFoundry Study.
-                  </p>
-                </div>
-              </div>
-            </div>
-
+          <div class="col-md-6">
+            <h3>Tools Used:</h3>
+            <ul>
+              <li>Sketch</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>Balsamiq</li>
+              <li>Invision</li>
+            </ul>
             <div>
-              <a href="expert-app-process.html" target="_blank" class="button red">See my Full Process</a>
+              <p>
+                Project Duration : 10 Months
+              </p>
+              <p>
+                My Role : Principal UX and UI Designer as part of my CareerFoundry Study.
+              </p>
             </div>
           </div>
         </div>
 
-    
+        <div>
+          <a href="expert-app-process.html" target="_blank" class="button red">See my Full Process</a>
+        </div>
+      </div>
+    </div>
+
+
     <!--orange-->
   </main>
 
@@ -196,7 +199,8 @@
     </div>
   </footer>
 
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>">
+  <script src="js/scripts.js"></script>
 
 </body>
 

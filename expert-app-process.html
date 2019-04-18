@@ -15,20 +15,23 @@
 
   <header>
     <div class="container">
-      <a href="index.html" class="logo">Jill Danielle Liao</a>
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">Jill Danielle Liao</a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- below starts the "main" section which contains all content which is different on every page -->
   <main>
     <!-- design thinking process boxes -->
-    <div>
+    <div id="process-box">
       <!--section-->
       <div class="container">
         <!--container-->
@@ -36,45 +39,52 @@
 
         <div class="row">
           <!--row-->
-          <div id="process-box">
+          <div>
             <!-- flexbox-->
-            <div class="col-md-3">
-              <!--column 1-->
-              <h2><a href="#discover">Discover</a></h2>
-              <ul>
-                <li>The Challenge</li>
-                <li>Competitor Analysis</li>
-                <li>The Opportunity</li>
-              </ul>
+            <div class="col-lg-3 col-md-6">
+              <div class="dt-box">
+                <h2><a href="#discover">Discover</a></h2>
+                <ul class="remove-padding">
+                  <li>The Challenge</li>
+                  <li>Competitor Analysis</li>
+                  <li>The Opportunity</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="col-md-3">
-              <h2><a href="#define">Define</a></h2>
-              <ul>
-                <li>Research Goals</li>
-                <li>Affinity Mapping & Insights</li>
-                <li>User Persona</li>
-                <li>User Journey</li>
-              </ul>
+            <div class="col-lg-3 col-md-6">
+              <div class="dt-box">
+                <h2><a href="#define">Define</a></h2>
+                <ul class="remove-padding">
+                  <li>Research Goals</li>
+                  <li>Affinity Mapping & Insights</li>
+                  <li>User Persona</li>
+                  <li>User Journey</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="col-md-3">
-              <h2><a href="#develop">Develop</a></h2>
-              <ul>
-                <li>Sitemap</li>
-                <li>Wireframes</li>
-                <li>User Testing</li>
-                <li>Test Script & Analysis</li>
-                <li>Design Iteration</li>
-              </ul>
+            <div class="col-lg-3 col-md-6">
+              <div class="dt-box">
+                <h2><a href="#develop">Develop</a></h2>
+                <ul class="remove-padding">
+                  <li>Sitemap</li>
+                  <li>Wireframes</li>
+                  <li>User Testing</li>
+                  <li>Test Script & Analysis</li>
+                  <li>Design Iteration</li>
+                </ul>
+              </div>
             </div>
 
-            <div class="col-md-3">
-              <h2><a href="#deliver">Deliver</a></h2>
-              <ul>
-                <li>Design Language System</li>
-                <li>Final Protype</li>
-              </ul>
+            <div class="col-lg-3 col-md-6">
+              <div class="dt-box">
+                <h2><a href="#deliver">Deliver</a></h2>
+                <ul class="remove-padding">
+                  <li>Design Language System</li>
+                  <li>Final Protype</li>
+                </ul>
+              </div>
             </div>
           </div> <!-- flexbox-->
 
@@ -100,90 +110,97 @@
               Scope: Competitive Analysis to Final Design
               Timeline: March 2018 to December 2018
             </p>
-          </div>
+            <div class="row">
 
-          <div class="row">
-            <div class="col-md-6 col-lg-7">
               <h3>Tools Used:</h3>
-            </div>
-            <div class="col-md-6 col-lg-7">
-              <ul>
-                <li>Sketch</li>
-                <li>Invision</li>
-                <li>Photoshop</li>
-              </ul>
-              <ul>
-                <li>Illustrator</li>
-                <li>Balsamiq</li>
-                <li>Realtime Board</li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-
-        <div id="discover">
-          <div>
-            <div>
-              <div>
-                <h2>Discover:</h2>
+              <div class="col-md-6">
+                <ul>
+                  <li>Sketch</li>
+                  <li>Invision</li>
+                  <li>Photoshop</li>
+                </ul>
               </div>
-              <div>
-                <p>
-                  Understanding the business and user needs is essential for understanding what you have to design.
-                </p>
+              <div class="col-md-6">
+                <ul>
+                  <li>Illustrator</li>
+                  <li>Balsamiq</li>
+                  <li>Realtime Board</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div>
-          <div>
-            <h3>The Challenge</h3>
-            <p>
-              People in the Philippines have trouble finding real experts online who can help them whenever they are faced in unfamiliar situations where they can call or message someone easily.
-            </p>
-            <p>
-              Our challenge is to provide people an app where they can search for verified experts from different fields of expertise and communicate with them anytime.
-            </p>
-            <p>
-              “People have trouble finding real experts online”
-            </p>
-            <h3>Competitor Analysis</h3>
 
-            <p>
-              Yellow Pages PH and Quora are the main platforms which users usually use for looking up experts or services online because Yellow Pages PH has a great database of services offered but it is not updated regularly while Quora has a great
-              Q&A platform but most contributors are not really experts on the topic they usually answer which leaves users more frustrated.
-            </p>
-            <p>
-              “Most contributors are not really experts which leaves users more frustrated”
-            </p>
-            <h2>The Opportunity</h2>
-            <p>
-              Expert App aims to provide people from different ages and different backgrounds a quick way to video-call or messages experts they choose anytime and anywhere!
-            </p>
-            <p>
-              How?
-            </p>
-            <p>
-              Expert App will have verified Experts and will have the necessary information listed in their bio including their availability times so that users can easily pick the experts they prefer.
-            </p>
-            <p>
-              This app will also require partial payment for the advance video-call bookings of the expert so that Experts will be protected from uncertain bookings and last-minute cancellations.
-            </p>
-            <p>
-              “so that users can easily pick the experts they prefer”
-            </p>
+    <div id="discover">
+      <div class="heading">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2>Discover:</h2>
+            </div>
+            <div class="col-md-8">
+              <p>
+                Understanding the business and user needs is essential for understanding what you have to design.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div id="define">
-          <div>
-            <div>
-              <div>
+
+      <div id="challenge">
+        <div class="container">
+          <h3>The Challenge</h3>
+          <p>
+            People in the Philippines have trouble finding real experts online who can help them whenever they are faced in unfamiliar situations where they can call or message someone easily.
+          </p>
+          <p>
+            Our challenge is to provide people an app where they can search for verified experts from different fields of expertise and communicate with them anytime.
+          </p>
+          <p>
+            “People have trouble finding real experts online”
+          </p>
+
+          <h3>Competitor Analysis</h3>
+          <p>
+            Yellow Pages PH and Quora are the main platforms which users usually use for looking up experts or services online because Yellow Pages PH has a great database of services offered but it is not updated regularly while Quora has a great
+            Q&A platform but most contributors are not really experts on the topic they usually answer which leaves users more frustrated.
+          </p>
+          <p>
+            “Most contributors are not really experts which leaves users more frustrated”
+          </p>
+
+          <h3>The Opportunity</h3>
+          <p>
+            Expert App aims to provide people from different ages and different backgrounds a quick way to video-call or messages experts they choose anytime and anywhere!
+          </p>
+          <p>
+            How?
+          </p>
+          <p>
+            Expert App will have verified Experts and will have the necessary information listed in their bio including their availability times so that users can easily pick the experts they prefer.
+          </p>
+          <p>
+            This app will also require partial payment for the advance video-call bookings of the expert so that Experts will be protected from uncertain bookings and last-minute cancellations.
+          </p>
+          <p>
+            “so that users can easily pick the experts they prefer”
+          </p>
+        </div>
+      </div>
+
+      <div id="define">
+        <div class="heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
                 <h2>Define:</h2>
               </div>
-              <div>
+              <div class="col-md-8">
                 <p>
                   Researching user’s behavior and needs whenever they are faced in unfamiliar situations to understand the user.
                 </p>
@@ -192,8 +209,8 @@
           </div>
         </div>
 
-        <div>
-          <div>
+        <div id="research-goals">
+          <div class="container">
             <h3>Research Goals</h3>
             <div>
               <ul>
@@ -292,21 +309,23 @@
         </div>
 
         <div>
-          <div>
+          <div class="container">
             <p>
               In organizing the app’s content hierarchy, I gathered participants to engage in a closed-card sorting activity to check if the hierarchy inside the app would make sense to them. After the card sorting activity, I assessed the data and
               revised some of the content so that users can easily navigate the app.
             </p>
           </div>
         </div>
+      </div>
 
-        <div id="develop">
-          <div>
-            <div>
-              <div>
+      <div id="develop">
+        <div class="heading">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
                 <h2>Develop:</h2>
               </div>
-              <div>
+              <div class="col-md-8">
                 <p>
                   Creating the initial designs of the app and testing it with the user to analyze the pain points of the user for iterations.
                 </p>
@@ -315,153 +334,154 @@
           </div>
         </div>
 
-        <h3>Sitemap</h3>
-        <div>
-          <picture class="processimgs">
-            <source srcset="img/expert-app-process/sitemap@1x.jpg" media="(max-width:767px)">
-            <img src="img/expert-app-process/sitemap@2x.jpg" alt="sitemap">
-          </picture>
-        </div>
-        <p>
-          After doing the sitemap and analyzing everything, it’s time to sketch out the wireframes, I started sketching the main features by and creating a lo-fidelity prototype to test it with the users. After the lo-fidelity, mid-fidelity
-          wireframes are created as more screens are added until creating high fidelity wireframes.
-        </p>
-        <h3>Wireframes</h3>
-        <p>
-          Wireframes are created to have Minimum Viable Product to test with users. These wireframes are supposed to provide basic functionality, contents, and information hierarchy. By having these, Wireframing helps me determine which features are
-          wanted and which elements are needed.
-        </p>
-        <h3>User Testing</h3>
-        <p>
-          After creating mid - fidelity wireframes, I did another round of user testing to check if users can perform specific tasks. The goal of this study is to assess the learnability, efficiency, errors, and satisfaction of the users in using
-          Expert App. This study also aims to uncover more insights from users.
-        </p>
-        <div>
-          <h3>Test Script</h3>
+        <div class="container">
+          <h3>Sitemap</h3>
+          <div>
+            <picture class="processimgs">
+              <source srcset="img/expert-app-process/sitemap@1x.jpg" media="(max-width:767px)">
+              <img src="img/expert-app-process/sitemap@2x.jpg" alt="sitemap">
+            </picture>
+          </div>
           <p>
-            I started the test with direct tasks for the users and after doing the tasks, I asked them open-ended questions that would help me understand them better and uncover more awareness on the things which I may have overlooked.
+            After doing the sitemap and analyzing everything, it’s time to sketch out the wireframes, I started sketching the main features by and creating a lo-fidelity prototype to test it with the users. After the lo-fidelity, mid-fidelity
+            wireframes are created as more screens are added until creating high fidelity wireframes.
           </p>
-          <h4>Direct Tasks</h4>
-          <ol>
-            <li>Use Expert App to message and ask an Expert on how to best take care of your plants.​</li>
-            <li>Use Expert App to post your question to gain different opinions from different people.​</li>
-            <li>Use Expert App to video-call an Expert and show him your plant because it will be easier for you to describe and the Expert to explain what is happening to your plant.</li>
-          </ol>
-          <h4>Open-ended Questions</h4>
-          <ul>
-            <li>What is your first impression of the home screen? What do you think of the buttons?</li>
-            <li>Please explore the app. Is there anything that you liked/disliked about this app?</li>
-            <li>Would you suggest something to improve your experience with this app?</li>
-            <li>What features do you think is essential for this app?</li>
-            <li>Would you actually use this app?</li>
-          </ul>
-        </div>
-        <h3>Analysis</h3>
-        <p>
-          After the user-testing, I have gathered a lot of data to sort out and analyze into which categories they will go to in the rainbow spreadsheet.
-        </p>
-        <div>
-          <picture class="processimgs">
-            <source srcset="img/expert-app-process/affinity-mapping@1x.jpg" media="(max-width:767px)">
-            <img src="img/expert-app-process/affinity-mapping@2x.jpg" alt="Affinity Map">
-          </picture>
-        </div>
-        <p>
-          I used the Rainbow Spreadsheet to arrange the five categories that I got from the analysis mapping earlier and noted the issues where users got a lot of frequent errors. This helped me pinpoint the issues that need to be iterated first.
-          The Rainbow Spreadsheet also helped me uncover the positive feedback I got from users and I can use this to data to promote more positive interactions from the app and the users. ​
-        </p>
-        <div>
-          <picture class="processimgs">
-            <source srcset="img/expert-app-process/rainbow-spreadsheet@1x.jpg" media="(max-width:767px)">
-            <img src="img/expert-app-process/rainbow-spreadsheet@2x.jpg" alt="Rainbow Spreadsheet">
-          </picture>
-        </div>
-        <h3>Design Iterations</h3>
-        <p>
-          Design Iterations are based on the critical issues based on the rainbow spreadsheet. ​
-        </p>
-
-        <div>
+          <h3>Wireframes</h3>
+          <p>
+            Wireframes are created to have Minimum Viable Product to test with users. These wireframes are supposed to provide basic functionality, contents, and information hierarchy. By having these, Wireframing helps me determine which features
+            are
+            wanted and which elements are needed.
+          </p>
+          <h3>User Testing</h3>
+          <p>
+            After creating mid - fidelity wireframes, I did another round of user testing to check if users can perform specific tasks. The goal of this study is to assess the learnability, efficiency, errors, and satisfaction of the users in using
+            Expert App. This study also aims to uncover more insights from users.
+          </p>
           <div>
-            <h2>Issue 1</h2>
-            <div>
-              <p>
-                Book a Call and View Availability confused all of the participants.
-              </p>
-            </div>
+            <h3>Test Script</h3>
+            <p>
+              I started the test with direct tasks for the users and after doing the tasks, I asked them open-ended questions that would help me understand them better and uncover more awareness on the things which I may have overlooked.
+            </p>
+            <h4>Direct Tasks</h4>
+            <ol>
+              <li>Use Expert App to message and ask an Expert on how to best take care of your plants.​</li>
+              <li>Use Expert App to post your question to gain different opinions from different people.​</li>
+              <li>Use Expert App to video-call an Expert and show him your plant because it will be easier for you to describe and the Expert to explain what is happening to your plant.</li>
+            </ol>
+            <h4>Open-ended Questions</h4>
+            <ul>
+              <li>What is your first impression of the home screen? What do you think of the buttons?</li>
+              <li>Please explore the app. Is there anything that you liked/disliked about this app?</li>
+              <li>Would you suggest something to improve your experience with this app?</li>
+              <li>What features do you think is essential for this app?</li>
+              <li>Would you actually use this app?</li>
+            </ul>
           </div>
+          <h3>Analysis</h3>
+          <p>
+            After the user-testing, I have gathered a lot of data to sort out and analyze into which categories they will go to in the rainbow spreadsheet.
+          </p>
           <div>
-            <picture class="issues">
-              <source srcset="img/expert-app-process/button-issue.gif" media="(max-width:767px)">
-              <img src="img/expert-app-process/button-issue.gif" alt="Book A Call Issue GIF">
+            <picture class="processimgs">
+              <source srcset="img/expert-app-process/affinity-mapping@1x.jpg" media="(max-width:767px)">
+              <img src="img/expert-app-process/affinity-mapping@2x.jpg" alt="Affinity Map">
             </picture>
-            <div>
-              <p>
-                Suggestion : Instead of having 2 separate buttons, Merge the buttons and name it Book a Call and inside that page contains the Expert’s availability.
-              </p>
-              <p>
-                Evidence : 6/6 of the participants have difficulty in navigating the buttons and they are confused about which one to choose when booking for a video call.
-              </p>
-            </div>
           </div>
-        </div>
-
-        <div>
+          <p>
+            I used the Rainbow Spreadsheet to arrange the five categories that I got from the analysis mapping earlier and noted the issues where users got a lot of frequent errors. This helped me pinpoint the issues that need to be iterated first.
+            The Rainbow Spreadsheet also helped me uncover the positive feedback I got from users and I can use this to data to promote more positive interactions from the app and the users. ​
+          </p>
           <div>
-            <h2>Issue 2</h2>
-            <div>
-              <p>
-                Filter by page confused several participants in navigating the page.
-              </p>
-            </div>
-          </div>
-          <div>
-            <picture class="issues">
-              <source srcset="img/expert-app-process/filter-by-issue.gif" media="(max-width:767px)">
-              <img src="img/expert-app-process/filter-by-issue.gif" alt="Filter by Issue GIF">
+            <picture class="processimgs">
+              <source srcset="img/expert-app-process/rainbow-spreadsheet@1x.jpg" media="(max-width:767px)">
+              <img src="img/expert-app-process/rainbow-spreadsheet@2x.jpg" alt="Rainbow Spreadsheet">
             </picture>
-            <div>
-              <p>
-                Suggestion : Makeover the UI elements of the page so that participants will have a sense of familiarity in navigating the page.
-              </p>
-              <p>
-                Evidence : 2/6 of the participants have trouble in the filter by page.
-              </p>
-            </div>
           </div>
-        </div>
-
-        <div>
+          <h3>Design Iterations</h3>
+          <p>
+            Design Iterations are based on the critical issues based on the rainbow spreadsheet. ​
+          </p>
 
           <div>
-            <h2>Issue 3</h2>
             <div>
-              <p>
-                The design was too simple for almost all the users.
-              </p>
+              <h2>Issue 1</h2>
+              <div>
+                <p>
+                  Book a Call and View Availability confused all of the participants.
+                </p>
+              </div>
+            </div>
+            <div>
+              <picture class="issues center">
+                <source srcset="img/expert-app-process/button-issue.gif" media="(max-width:767px)">
+                <img src="img/expert-app-process/button-issue.gif" alt="Book A Call Issue GIF">
+              </picture>
+              <div>
+                <p>
+                  Suggestion : Instead of having 2 separate buttons, Merge the buttons and name it Book a Call and inside that page contains the Expert’s availability.
+                </p>
+                <p>
+                  Evidence : 6/6 of the participants have difficulty in navigating the buttons and they are confused about which one to choose when booking for a video call.
+                </p>
+              </div>
             </div>
           </div>
 
+          <div>
             <div>
-            <div class="col-md-4 issues3">
-              <picture>
-                <source srcset="img/expert-app-process/home-page.gif" media="(max-width:767px)">
-                <img src="img/expert-app-process/home-page.gif" alt="Home Page GIF">
-              </picture>
+              <h2>Issue 2</h2>
+              <div>
+                <p>
+                  Filter by page confused several participants in navigating the page.
+                </p>
+              </div>
             </div>
-            <div class="col-md-4 issues3">
-              <picture>
-                <source srcset="img/expert-app-process/categories.gif" media="(max-width:767px)">
-                <img src="img/expert-app-process/categories.gif" alt="Categories GIF">
+            <div>
+              <picture class="issues center">
+                <source srcset="img/expert-app-process/filter-by-issue.gif" media="(max-width:767px)">
+                <img src="img/expert-app-process/filter-by-issue.gif" alt="Filter by Issue GIF">
               </picture>
-            </div>
-            <div class="col-md-4 issues3">
-              <picture>
-                <source srcset="img/expert-app-process/video-call-issue.gif" media="(max-width:767px)">
-                <img src="img/expert-app-process/video-call-issue.gif" alt="Video Call Issue GIF">
-              </picture>
+              <div>
+                <p>
+                  Suggestion : Makeover the UI elements of the page so that participants will have a sense of familiarity in navigating the page.
+                </p>
+                <p>
+                  Evidence : 2/6 of the participants have trouble in the filter by page.
+                </p>
+              </div>
             </div>
           </div>
+
+          <div>
+            <div>
+              <h2>Issue 3</h2>
+              <div>
+                <p>
+                  The design was too simple for almost all the users.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-4 center">
+                <picture class="issues3">
+                  <source srcset="img/expert-app-process/home-page.gif" media="(max-width:767px)">
+                  <img src="img/expert-app-process/home-page.gif" alt="Home Page GIF">
+                </picture>
+              </div>
+              <div class="col-md-4 center">
+                <picture class="issues3">
+                  <source srcset="img/expert-app-process/categories.gif" media="(max-width:767px)">
+                  <img src="img/expert-app-process/categories.gif" alt="Categories GIF">
+                </picture>
+              </div>
+              <div class="col-md-4 center">
+                <picture class="issues3">
+                  <source srcset="img/expert-app-process/video-call-issue.gif" media="(max-width:767px)">
+                  <img src="img/expert-app-process/video-call-issue.gif" alt="Video Call Issue GIF">
+                </picture>
+              </div>
+            </div>
             <div>
               <p>
                 Suggestion : Make the whole prototype into a colored one and fix the UI elements to make it seem more real and engaging.
@@ -471,7 +491,7 @@
               </p>
             </div>
           </div>
-          </div>
+
 
           <div>
             <div>
@@ -483,7 +503,7 @@
               </div>
             </div>
             <div>
-              <picture class="issues">
+              <picture class="issues center">
                 <source srcset="img/expert-app-process/onboarding-issue.gif" media="(max-width:767px)">
                 <img src="img/expert-app-process/onboarding-issue.gif" alt="Onboarding GIF">
               </picture>
@@ -508,7 +528,7 @@
               </div>
             </div>
             <div>
-              <picture class="issues">
+              <picture class="issues center">
                 <source srcset="img/expert-app-process/calendar-issue.gif" media="(max-width:767px)">
                 <img src="img/expert-app-process/calendar-issue.gif" alt="Calendar GIF">
               </picture>
@@ -522,14 +542,16 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div id="deliver">
-            <div>
-              <div>
-                <div>
+        <div id="deliver">
+          <div class="heading">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
                   <h2>Deliver:</h2>
                 </div>
-                <div>
+                <div class="col-md-8">
                   <p>
                     Documenting the Design System language of Expert App for easier communication between designers and developers.
                   </p>
@@ -538,8 +560,8 @@
             </div>
           </div>
 
-          <div>
-            <div>
+          <div id="design-language-systems">
+            <div class="container">
               <h3>Design Language System</h3>
               <p>
                 I compiled the Typography, Tone of Voice and Copy/Language Guidelines, Colors, Icons, Imagery and Illustration to create a Design System Language. A Design System Language will help different teams in a project communicate better
@@ -566,7 +588,7 @@
               </div>
               <h3>Expert App</h3>
               <div>
-                <picture class="expert-gif">
+                <picture class="expert-gif issues">
                   <source srcset="img/expert-app-process/onboarding-issue.gif" media="(max-width:767px)">
                   <img src="img/expert-app-process/onboarding-issue.gif" alt="Onboarding GIF">
                 </picture>
@@ -604,6 +626,7 @@
     </div>
   </footer>
 
+  <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>">
   <script src="js/scripts.js"></script>
 
 </body>

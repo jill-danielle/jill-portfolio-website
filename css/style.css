@@ -25,6 +25,8 @@ h1 {
   font-size: 2em;
   font-weight: 700;
   text-align: center;
+  margin-top: 0;
+  padding-top: 0.67em;
 }
 
 .h1.hero {
@@ -51,6 +53,14 @@ h4 {
 
 img {
   width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.remove-padding {
+  padding: 0;
 }
 
 a {
@@ -126,7 +136,7 @@ button.red {
   transition: 0.2s opacity;
 }
 
-.button1 , .button2 {
+.button1, .button2 {
   display: inline-block;
 }
 
@@ -154,8 +164,7 @@ button.red {
 
 header {
   background-color: #000;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   display: inline-block;
@@ -165,6 +174,7 @@ a.logo {
   font-weight: 600;
   font-size: 1.5em;
   color: #ffffff;
+  max-width: 150px;
 }
 
 a:visited.logo {
@@ -178,37 +188,40 @@ a:hover.logo {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
-nav>ul>li>a:visited {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
 }
 
-nav>ul>li>a:hover {
-  color: #fff;
-  opacity: 0.8;
+.navtoggle.responsive li  {
+  display: block;
 }
 
-#process-box>ul>a {
-  color: #fff;
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-#process-box>ul>a:visited {
-  color: #fff;
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -219,7 +232,7 @@ nav>ul>li>a:hover {
 }
 
 main {
-  padding-top: 94px;
+  padding-top: 52px;
 }
 
 footer .button {
@@ -259,7 +272,54 @@ footer p {
 }
 
 .expertpage {
-  padding-top: 70px;
+  padding-top: 52px;
+}
+
+.issues3 img {
+  max-width: 200px;
+  display: inline-block;
+}
+
+.issues img {
+  max-width: 200px;
+  display: block;
+  margin: auto;
+}
+
+#process-box ul {
+  margin-left: 15px;
+}
+
+#process-box {
+  background-color: lightblue;
+}
+
+.dt-box {
+  background-color: #476b8e;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.dt-box h2 {
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+#discover .heading {
+  background-color: black;
+  padding: 20px 0;
+}
+
+#discover .heading h2, #discover .heading p {
+  color: #fff;
+}
+
+#discover .heading h2 {
+  margin: 0;
+}
+
+#discover .heading p {
+  margin-top: 0;
 }
 
 /* ==============================
@@ -328,8 +388,13 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 
+  main {
+    padding-top: 80px;
+  }
+
   a.logo {
     margin-top: 5px;
+    min-width: 641px;
   }
 
   nav {
@@ -338,12 +403,47 @@ Medium devices (640px and larger)
     margin-top: -10px;
   }
 
+  nav > ul {
+    margin: 1em 0;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  nav>ul>li>a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  nav>ul>li>a:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+  display: none;
+}
+
   #hero-expert span {
     display: block;
   }
 
   #hero-expert h1 {
-  font-size: 2em;
+    font-size: 2em;
   }
 
   #hero-expert {
@@ -356,6 +456,18 @@ Medium devices (640px and larger)
 
   .col-md-4 {
     width: 33.33%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
   }
 
   [class*="col-"] {
@@ -381,11 +493,6 @@ Medium devices (640px and larger)
     text-align: center;
   }
 
-  #process-box {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .expert-gif img {
     max-width: 200px;
     display: block;
@@ -400,20 +507,14 @@ Medium devices (640px and larger)
     margin-right: auto;
   }
 
-  .issues img {
-    max-width: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .dt-box {
+    min-height: 230px;
   }
 
-  .issues3 {
-    max-width: 200px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+  #discover .heading h2 {
+    text-align: right;
+    padding-right: 20px;
   }
-
 }
 
 /* ==============================
@@ -449,6 +550,10 @@ Large devices (1024px or larger)
 
   .col-lg-5 {
     width: 40%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
   }
 
   [class*="col-"] {
@@ -500,5 +605,7 @@ Large devices (1024px or larger)
     margin: auto;
   }
 
-
+  .dt-box {
+    min-height: 330px;
+  }
 }

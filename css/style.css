@@ -94,8 +94,8 @@ a:active {
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #00b0ff;
   color: #fff
-  /* needed to override the default link color */
-  font-weight: 400;
+    /* needed to override the default link color */
+    font-weight: 400;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
@@ -148,8 +148,7 @@ button.red {
 /* Images */
 #hero-expert {
   background-image:
-    linear-gradient
-    (rgba(0, 0, 0, 0.5),
+    linear-gradient (rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.5)),
     url(../img/expert-app-process/expert-app-hero-image@2x.jpg);
@@ -194,7 +193,7 @@ a:hover.logo {
   text-decoration: none;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -224,10 +223,11 @@ nav > ul {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
@@ -419,29 +419,29 @@ Medium devices (640px and larger)
     margin-top: -10px;
   }
 
-  nav > ul {
+  nav>ul {
     margin: 1em 0;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
-  nav > ul > li > a {
+  nav>ul>li>a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
   }
 
-  nav > ul > li > a:visited {
+  nav>ul>li>a:visited {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
   }
 
-  nav > ul > li > a:hover {
+  nav>ul>li>a:hover {
     color: #fff;
     opacity: 0.8;
   }

@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -14,10 +14,13 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #000;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.5;
 }
 
@@ -38,7 +41,7 @@ h1 {
 h2 {
   font-size: 2em;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 h3 {
@@ -74,7 +77,8 @@ a:visited {
   color: #ff7f50;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #cc6540;
   text-decoration: underline;
   /* Underlining when hovering over a link */
@@ -88,8 +92,8 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #00B0ff;
-  color: #ffffff;
+  background-color: #00b0ff;
+  color: #fff
   /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -136,14 +140,19 @@ button.red {
   transition: 0.2s opacity;
 }
 
-.button1, .button2 {
+.button1,
+.button2 {
   display: inline-block;
 }
 
 /* Images */
 #hero-expert {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/expert-app-process/expert-app-hero-image@2x.jpg);
+  background-image:
+    linear-gradient
+    (rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)),
+    url(../img/expert-app-process/expert-app-hero-image@2x.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,19 +182,19 @@ header {
 a.logo {
   font-weight: 600;
   font-size: 1.5em;
-  color: #ffffff;
+  color: #fff;
   max-width: 150px;
 }
 
 a:visited.logo {
-  color: #ffffff;
+  color: #fff;
 }
 
 a:hover.logo {
   text-decoration: none;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -195,7 +204,8 @@ nav>ul {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -207,20 +217,20 @@ nav>ul {
   font-size: 20px;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(255,127,80,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -239,7 +249,8 @@ footer .button {
   margin: 10px 0;
 }
 
-footer .fas, footer .fab {
+footer .fas,
+footer .fab {
   margin-right: 10px;
 }
 
@@ -264,7 +275,7 @@ footer p {
 ================================= */
 #myprojects {
   text-align: center;
-  color: #000000;
+  color: #000;
 }
 
 .row {
@@ -301,7 +312,7 @@ footer p {
 }
 
 .dt-box h2 {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 0;
 }
 
@@ -310,7 +321,8 @@ footer p {
   padding: 20px 0;
 }
 
-#discover .heading h2, #discover .heading p {
+#discover .heading h2,
+#discover .heading p {
   color: #fff;
 }
 
@@ -323,7 +335,7 @@ footer p {
 }
 
 #work .row {
-padding-bottom: 25px;
+  padding-bottom: 25px;
 }
 
 /* ==============================
@@ -411,25 +423,25 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-  nav>ul>li>a {
+  nav > ul > li > a {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
   }
 
-  nav>ul>li>a:visited {
+  nav > ul > li > a:visited {
     padding: 0 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #fff;
   }
 
-  nav>ul>li>a:hover {
+  nav > ul > li > a:hover {
     color: #fff;
     opacity: 0.8;
   }
@@ -439,8 +451,8 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   #hero-expert span {
     display: block;
@@ -543,7 +555,8 @@ Large devices (1024px or larger)
     display: block;
   }
 
-  #hero p, #hero-expert p {
+  #hero p,
+  #hero-expert p {
     max-width: 700px;
     margin: 0 auto;
   }
